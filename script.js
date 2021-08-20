@@ -141,10 +141,15 @@ function stop() {
     }, 2000);
 }
 
+function refreshRecord() {
+    msg.innerText = "";
+}
+
 
 //console.log(palindromeCheckForAllFormats("2021-09-08"));
 
 document.querySelector('.btn').addEventListener("click", () => {
+    refreshRecord();
     let dob = birthDate.value;
     let date = dob.split('-');
     let dd = date[2];
