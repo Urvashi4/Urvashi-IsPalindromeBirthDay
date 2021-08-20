@@ -79,3 +79,11 @@ label {
     text-shadow: 1px 1px 1px var(--primary-color);
     font-size: 1.1em;
 }
+
+.watch {
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}

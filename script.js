@@ -1,5 +1,6 @@
 let birthDate = document.querySelector('#Bday');
 let msg = document.querySelector('.output');
+let gif = document.querySelector('.watch');
 
 //function to reverse string
 function reverseString(str) {
@@ -128,6 +129,18 @@ function getNextPalindromeDate(date) {
     }
 }
 
+function delay() {
+    setTimeout(() => {
+        gif.style.display = "block";
+    }, 10);
+}
+
+function stop() {
+    setTimeout(() => {
+        gif.style.display = "none";
+    }, 2000);
+}
+
 
 //console.log(palindromeCheckForAllFormats("2021-09-08"));
 
@@ -157,9 +170,17 @@ document.querySelector('.btn').addEventListener("click", () => {
 
         if (checkFlg == false) {
             const [control, nextDate] = getNextPalindromeDate(dt);
-            msg.innerText = `Your birthdate is not palindrome 😟. The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${control} days 😮.`;
+            delay();
+            stop();
+            setTimeout(() => {
+                msg.innerText = `Your birthdate is not palindrome 😟. The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${control} days 😮.`;
+            }, 2000);
         } else {
-            msg.innerText = "Yay 😄! your birthdate is palindrome";
+            delay();
+            stop();
+            setTimeout(() => {
+                msg.innerText = "Yay 😄! your birthdate is palindrome";
+            }, 2000);
         }
     }
 });
