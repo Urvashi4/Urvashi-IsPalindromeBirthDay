@@ -22,7 +22,7 @@ body {
     width: 550px;
     border: 2px solid var(--primary-color);
     border-radius: 0.5em;
-    box-shadow: 2px 2px 5px var(--focus-color);
+    box-shadow: 2px 2px 6px var(--focus-color);
 }
 
 .main1 {
@@ -39,6 +39,7 @@ h1 {
     margin-bottom: 2%;
     color: var(--primary-color);
     text-shadow: 1px 1px 1px var(--focus-color)!important;
+
 }
 
 p {
@@ -53,7 +54,6 @@ p {
     padding: 4px;
     border: 2.5px solid var(--primary-color);
     box-shadow: 2px 2px 4px var(--focus-color);
-
 }
 
 .btn:hover {
@@ -67,12 +67,12 @@ input {
     padding: 4px;
     border: 2.5px solid var(--primary-color);
     box-shadow: 2px 2px 4px var(--focus-color);
-
 }
 
 input:hover {
     border: 3px solid var(--focus-color);
-    box-shadow: 2px 2px 4px var(--primary-color);   
+    box-shadow: 2px 2px 4px var(--primary-color);
+ 
 }
 
 label {
